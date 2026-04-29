@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediCare Pharmacy – Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-cross">✚</span> MediCare
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+      <label for="menu-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="section-label">Get in Touch</div>
+      <h1>Contact <em>Us</em></h1>
+      <p>We're here to help. Reach out anytime — online, by phone, or visit us in store.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section contact-section">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap">
+        <h2>Send Us a Message</h2>
+        <p class="contact-sub">Have a question about a medication, service, or prescription? We'll get back to you within a few hours.</p>
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+90 555 000 0000" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Select a topic...</option>
+              <option>Prescription Inquiry</option>
+              <option>Consultation Booking</option>
+              <option>Home Delivery</option>
+              <option>Product Availability</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info">
+        <div class="info-block">
+          <div class="info-icon">📍</div>
+          <div>
+            <h4>Our Location</h4>
+            <p>123 Health Street<br/>Kadıköy, Istanbul<br/>34710, Turkey</p>
+          </div>
+        </div>
+        <div class="info-block">
+          <div class="info-icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <p>+90 212 555 0199<br/>+90 212 555 0200</p>
+          </div>
+        </div>
+        <div class="info-block">
+          <div class="info-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <p>info@medicare-pharmacy.com<br/>orders@medicare-pharmacy.com</p>
+          </div>
+        </div>
+        <div class="info-block">
+          <div class="info-icon">🕐</div>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>Monday – Friday: 08:00 – 22:00<br/>Saturday: 09:00 – 21:00<br/>Sunday: 10:00 – 18:00</p>
+          </div>
+        </div>
+        <div class="emergency-box">
+          <span class="emergency-icon">🚨</span>
+          <div>
+            <h4>Emergency Line</h4>
+            <p>For urgent medication needs after hours: <strong>+90 212 555 0911</strong></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <section class="map-section">
+    <div class="map-placeholder">
+      <div class="map-pin-wrap">
+        <div class="map-pin">📍</div>
+        <div class="map-label">
+          <strong>MediCare Pharmacy</strong>
+          <span>123 Health Street, Kadıköy, Istanbul</span>
+        </div>
+      </div>
+      <div class="map-grid-overlay"></div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section team-section">
+    <div class="section-label">Our Team</div>
+    <h2 class="section-title">Meet the Pharmacists</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar" style="background: var(--mint);">👩‍⚕️</div>
+        <h4>Dr. Elif Şahin</h4>
+        <p>Chief Pharmacist</p>
+        <small>15 years experience · Specialises in chronic disease management</small>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: var(--sky);">👨‍⚕️</div>
+        <h4>Burak Yılmaz</h4>
+        <p>Clinical Pharmacist</p>
+        <small>10 years experience · Oncology &amp; palliative care</small>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: var(--peach);">👩‍⚕️</div>
+        <h4>Zeynep Arslan</h4>
+        <p>Pharmacist</p>
+        <small>8 years experience · Paediatrics &amp; mother health</small>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: var(--lavender);">👨‍⚕️</div>
+        <h4>Ali Kaya</h4>
+        <p>Pharmacist</p>
+        <small>6 years experience · Sports &amp; nutrition supplementation</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-cross">✚</span> MediCare Pharmacy
+        <p>Health &amp; Wellness for everyone.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <p>📍 123 Health Street, Istanbul</p>
+        <p>📞 +90 212 555 0199</p>
+        <p>🕐 Mon–Sat: 08:00 – 22:00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MediCare Pharmacy. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
